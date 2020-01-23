@@ -10,8 +10,9 @@ namespace MyeverNote.BusinessLayer
     {
         public Test()
         {
+            //Eğer database veritabanında mevcut değilse oluştur.
             MyEverNote.DataAccessLayer.DatabaseContext db = new MyEverNote.DataAccessLayer.DatabaseContext();
-            db.EvernoteUsers.ToList();
+            db.Database.CreateIfNotExists();
         }
     }
 }

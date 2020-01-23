@@ -3,3 +3,14 @@ C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bi
 C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\obj\Debug\MyeverNote.BusinessLayer.csprojAssemblyReference.cache
 C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\obj\Debug\MyeverNote.BusinessLayer.dll
 C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\obj\Debug\MyeverNote.BusinessLayer.pdb
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\MyeverNote.BusinessLayer.dll.config
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\MyEverNote.DataAccessLayer.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\MyEverNote.Entities.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\MyEverNote.DataAccessLayer.pdb
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\MyEverNote.DataAccessLayer.dll.config
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\MyEverNote.Entities.pdb
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\obj\Debug\MyeverNote.BusinessLayer.csproj.CopyComplete

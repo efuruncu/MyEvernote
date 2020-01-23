@@ -19,5 +19,9 @@ namespace MyEverNote.Entities
         //başka bir class la ilişkili olduğu için virtual olarak tanımlandı.
         public virtual List<Note> Notes { get; set; }
         
+        public Category()
+        {
+            Notes = new List<Note>();
+        }
     }
 }

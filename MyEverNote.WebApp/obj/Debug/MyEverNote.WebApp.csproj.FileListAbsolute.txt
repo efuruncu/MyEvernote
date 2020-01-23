@@ -66,3 +66,15 @@ C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\obj\Debug
 C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\obj\Debug\MyEverNote.WebApp.dll
 C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\obj\Debug\MyEverNote.WebApp.pdb
 C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\obj\Debug\MyEverNote.WebApp.csprojAssemblyReference.cache
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\bin\EntityFramework.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\bin\MyeverNote.BusinessLayer.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\bin\MyEverNote.Entities.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\bin\MyEverNote.DataAccessLayer.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\bin\MyeverNote.BusinessLayer.pdb
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\bin\MyeverNote.BusinessLayer.dll.config
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\bin\MyEverNote.Entities.pdb
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\bin\EntityFramework.xml
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\bin\MyEverNote.DataAccessLayer.pdb
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\bin\MyEverNote.DataAccessLayer.dll.config

@@ -11,3 +11,5 @@ C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\
 C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\obj\Debug\MyEverNote.DataAccessLayer.csproj.CopyComplete
 C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\obj\Debug\MyEverNote.DataAccessLayer.dll
 C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\obj\Debug\MyEverNote.DataAccessLayer.pdb
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\bin\Debug\MyEverNote.Entities.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\bin\Debug\MyEverNote.Entities.pdb
