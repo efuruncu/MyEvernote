@@ -1,0 +1,5 @@
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\MyeverNote.BusinessLayer.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\MyeverNote.BusinessLayer.pdb
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\obj\Debug\MyeverNote.BusinessLayer.csprojAssemblyReference.cache
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\obj\Debug\MyeverNote.BusinessLayer.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\obj\Debug\MyeverNote.BusinessLayer.pdb

@@ -1,0 +1,13 @@
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\bin\Debug\MyEverNote.DataAccessLayer.dll.config
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\bin\Debug\MyEverNote.DataAccessLayer.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\bin\Debug\MyEverNote.DataAccessLayer.pdb
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\bin\Debug\FakeData.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\bin\Debug\FakeData.pdb
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\obj\Debug\MyEverNote.DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\obj\Debug\MyEverNote.DataAccessLayer.csproj.CopyComplete
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\obj\Debug\MyEverNote.DataAccessLayer.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.DataAccessLayer\obj\Debug\MyEverNote.DataAccessLayer.pdb
