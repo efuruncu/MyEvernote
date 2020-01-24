@@ -277,9 +277,9 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyeverNote.BusinessLayer\MyeverNote.BusinessLayer.csproj">
+    <ProjectReference Include="..\MyeverNote.BusinessLayer\MyEverNote.BusinessLayer.csproj">
       <Project>{1ffadbb0-ad00-447b-ace4-2a622deee6e1}</Project>
-      <Name>MyeverNote.BusinessLayer</Name>
+      <Name>MyEverNote.BusinessLayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\MyEverNote.Entities\MyEverNote.Entities.csproj">
       <Project>{4b301848-2c91-438a-b8b7-6f5ea7ff853b}</Project>

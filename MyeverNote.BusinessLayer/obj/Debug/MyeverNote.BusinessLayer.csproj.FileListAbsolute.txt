@@ -16,3 +16,5 @@ C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bi
 C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\obj\Debug\MyeverNote.BusinessLayer.csproj.CopyComplete
 C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\FakeData.dll
 C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\FakeData.pdb
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\Castle.Core.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\Castle.Core.xml

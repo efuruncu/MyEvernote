@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEverNote.WebApp", "MyEverNote.WebApp\MyEverNote.WebApp.csproj", "{B50D94D2-8997-4327-89A5-5945C2605C3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyeverNote.BusinessLayer", "MyeverNote.BusinessLayer\MyeverNote.BusinessLayer.csproj", "{1FFADBB0-AD00-447B-ACE4-2A622DEEE6E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEverNote.BusinessLayer", "MyeverNote.BusinessLayer\MyEverNote.BusinessLayer.csproj", "{1FFADBB0-AD00-447B-ACE4-2A622DEEE6E1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEverNote.DataAccessLayer", "MyEverNote.DataAccessLayer\MyEverNote.DataAccessLayer.csproj", "{E5BF1165-0E3E-4BC4-956D-7E937AA55413}"
 EndProject
