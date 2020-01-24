@@ -12,6 +12,7 @@ namespace MyEverNote.DataAccessLayer
     {
         protected override void Seed(DatabaseContext context)
         {
+            //Adding admin user..
             EvernoteUser admin = new EvernoteUser()
             {
                 Name = "Elif",
@@ -26,7 +27,7 @@ namespace MyEverNote.DataAccessLayer
                 ModifiedOn = DateTime.Now.AddMinutes(5),
                 ModifiedUsername = "eliffuruncu"
             };
-
+            //Adding standart user..
             EvernoteUser standartUser = new EvernoteUser()
             {
                 Name = "Emir",
@@ -44,6 +45,26 @@ namespace MyEverNote.DataAccessLayer
             context.EvernoteUsers.Add(admin);
             context.EvernoteUsers.Add(standartUser);
 
+            for(int i = 0; i < 8; i++)
+            {
+                EvernoteUser user = new EvernoteUser()
+                {
+                    Name = FakeData.NameData.GetFirstName(),
+                    Surname = FakeData.NameData.GetSurname(),
+                    Email = FakeData.NetworkData.GetEmail(),
+                    ActivateGuid = Guid.NewGuid(),
+                    IsActive = true,
+                    IsAdmin = false,
+                    Username = $"user{i}",
+                    Password = "123",
+                    CreatedOn = FakeData.DateTimeData.GetDatetime(DateTime.Now.AddYears(-1), DateTime.Now),
+                    ModifiedOn = FakeData.DateTimeData.GetDatetime(DateTime.Now.AddYears(-1), DateTime.Now),
+                    ModifiedUsername= $"user{i}"
+
+                };
+                context.EvernoteUsers.Add(user);
+            }
+
             context.SaveChanges();
 
             //Adding fake categories
@@ -57,23 +78,51 @@ namespace MyEverNote.DataAccessLayer
                     ModifiedOn = DateTime.Now,
                     ModifiedUsername = "eliffuruncu"
                 };
-
+                context.Categories.Add(cat);
+                //Adding fake Notes
                 for(int k = 0; k < FakeData.NumberData.GetNumber(5,9); k++)
                 {
                     Note note = new Note()
                     {
                         Title=FakeData.TextData.GetAlphabetical(FakeData.NumberData.GetNumber(5,25)),
                         Text = FakeData.TextData.GetSentences(FakeData.NumberData.GetNumber(1,3)),
-                        Category=cat,
                         IsDraft=false,
-                        LikeCount=FakeData.NumberData.GetNumber(10,50),
+                        LikeCount=FakeData.NumberData.GetNumber(1,9),
                         Owner=(k % 2 == 0) ? admin : standartUser,
                         CreatedOn=FakeData.DateTimeData.GetDatetime(DateTime.Now.AddYears(-1),DateTime.Now),
                         ModifiedOn= FakeData.DateTimeData.GetDatetime(DateTime.Now.AddYears(-1), DateTime.Now),
                         ModifiedUsername= (k % 2 == 0) ? admin.Username : standartUser.Username
                     };
                     cat.Notes.Add(note);
+                    //Adding fake comments
+                    for(int j = 0; j < FakeData.NumberData.GetNumber(3, 5); j++)
+                    {
+                        Comment comment = new Comment()
+                        {
+                            Text = FakeData.TextData.GetSentence(),
+                            Owner = (j % 2 == 0) ? admin : standartUser,
+                            CreatedOn = FakeData.DateTimeData.GetDatetime(DateTime.Now.AddYears(-1), DateTime.Now),
+                            ModifiedOn = FakeData.DateTimeData.GetDatetime(DateTime.Now.AddYears(-1), DateTime.Now),
+                            ModifiedUsername = (j % 2 == 0) ? admin.Username : standartUser.Username
+
+                        };
+                        note.Comments.Add(comment);
+                    }
+
+                    //Adding Fake Likes
+
+                    List<EvernoteUser> userList = context.EvernoteUsers.ToList();
+                    for(int m=0; m < note.LikeCount; m++)
+                    {
+                        Liked liked = new Liked()
+                        {
+                            LikedUser = userList[m]
+                        };
+                        note.Likes.Add(liked);
+                    }
                 }
+
+                context.SaveChanges();
             }
 
         }

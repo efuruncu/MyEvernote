@@ -78,3 +78,5 @@ C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\bin\Entit
 C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\bin\EntityFramework.SqlServer.xml
 C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\bin\MyEverNote.DataAccessLayer.pdb
 C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\bin\MyEverNote.DataAccessLayer.dll.config
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\bin\FakeData.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyEverNote.WebApp\bin\FakeData.pdb

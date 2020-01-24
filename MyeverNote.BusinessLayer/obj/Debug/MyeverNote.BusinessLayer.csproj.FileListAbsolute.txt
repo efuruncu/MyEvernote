@@ -14,3 +14,5 @@ C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bi
 C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\EntityFramework.xml
 C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\obj\Debug\MyeverNote.BusinessLayer.csproj.CopyComplete
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\FakeData.dll
+C:\Users\ElifFuruncu\source\repos\MyEverNoteSolution\MyeverNote.BusinessLayer\bin\Debug\FakeData.pdb

@@ -12,7 +12,8 @@ namespace MyeverNote.BusinessLayer
         {
             //Eğer database veritabanında mevcut değilse oluştur.
             MyEverNote.DataAccessLayer.DatabaseContext db = new MyEverNote.DataAccessLayer.DatabaseContext();
-            db.Database.CreateIfNotExists();
+           //Database ile birlikte verilerinde oluşması için select sorgusununda çalışması gerekiyor.
+            db.Categories.ToList();
         }
     }
 }
