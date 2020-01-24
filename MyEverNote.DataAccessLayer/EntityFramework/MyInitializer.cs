@@ -1,14 +1,14 @@
-﻿using System;
+﻿using MyEverNote.Entities;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.Entity;
-using MyEverNote.Entities;
 
-namespace MyEverNote.DataAccessLayer
+namespace MyEverNote.DataAccessLayer.EntityFramework
 {
-    class MyInitializer : CreateDatabaseIfNotExists<DatabaseContext>
+    public class MyInitializer : CreateDatabaseIfNotExists<DatabaseContext>
     {
         protected override void Seed(DatabaseContext context)
         {
@@ -45,7 +45,7 @@ namespace MyEverNote.DataAccessLayer
             context.EvernoteUsers.Add(admin);
             context.EvernoteUsers.Add(standartUser);
 
-            for(int i = 0; i < 8; i++)
+            for (int i = 0; i < 8; i++)
             {
                 EvernoteUser user = new EvernoteUser()
                 {
@@ -59,7 +59,7 @@ namespace MyEverNote.DataAccessLayer
                     Password = "123",
                     CreatedOn = FakeData.DateTimeData.GetDatetime(DateTime.Now.AddYears(-1), DateTime.Now),
                     ModifiedOn = FakeData.DateTimeData.GetDatetime(DateTime.Now.AddYears(-1), DateTime.Now),
-                    ModifiedUsername= $"user{i}"
+                    ModifiedUsername = $"user{i}"
 
                 };
                 context.EvernoteUsers.Add(user);
@@ -82,23 +82,23 @@ namespace MyEverNote.DataAccessLayer
                 };
                 context.Categories.Add(cat);
                 //Adding fake Notes
-                for(int k = 0; k < FakeData.NumberData.GetNumber(5,9); k++)
+                for (int k = 0; k < FakeData.NumberData.GetNumber(5, 9); k++)
                 {
                     EvernoteUser owner = userList[FakeData.NumberData.GetNumber(0, userList.Count - 1)];
                     Note note = new Note()
                     {
-                        Title=FakeData.TextData.GetAlphabetical(FakeData.NumberData.GetNumber(5,25)),
-                        Text = FakeData.TextData.GetSentences(FakeData.NumberData.GetNumber(1,3)),
-                        IsDraft=false,
-                        LikeCount=FakeData.NumberData.GetNumber(1,9),
-                        Owner=owner,
-                        CreatedOn=FakeData.DateTimeData.GetDatetime(DateTime.Now.AddYears(-1),DateTime.Now),
-                        ModifiedOn= FakeData.DateTimeData.GetDatetime(DateTime.Now.AddYears(-1), DateTime.Now),
-                        ModifiedUsername=owner.Username
+                        Title = FakeData.TextData.GetAlphabetical(FakeData.NumberData.GetNumber(5, 25)),
+                        Text = FakeData.TextData.GetSentences(FakeData.NumberData.GetNumber(1, 3)),
+                        IsDraft = false,
+                        LikeCount = FakeData.NumberData.GetNumber(1, 9),
+                        Owner = owner,
+                        CreatedOn = FakeData.DateTimeData.GetDatetime(DateTime.Now.AddYears(-1), DateTime.Now),
+                        ModifiedOn = FakeData.DateTimeData.GetDatetime(DateTime.Now.AddYears(-1), DateTime.Now),
+                        ModifiedUsername = owner.Username
                     };
                     cat.Notes.Add(note);
                     //Adding fake comments
-                    for(int j = 0; j < FakeData.NumberData.GetNumber(3, 5); j++)
+                    for (int j = 0; j < FakeData.NumberData.GetNumber(3, 5); j++)
                     {
                         EvernoteUser comment_owner = userList[FakeData.NumberData.GetNumber(0, userList.Count - 1)];
                         Comment comment = new Comment()
@@ -115,8 +115,8 @@ namespace MyEverNote.DataAccessLayer
 
                     //Adding Fake Likes
 
-                    
-                    for(int m=0; m < note.LikeCount; m++)
+
+                    for (int m = 0; m < note.LikeCount; m++)
                     {
                         Liked liked = new Liked()
                         {
@@ -132,3 +132,5 @@ namespace MyEverNote.DataAccessLayer
         }
     }
 }
+
+

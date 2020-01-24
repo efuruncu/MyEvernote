@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyEverNote.DataAccessLayer
+namespace MyEverNote.DataAccessLayer.EntityFramework
 {
-    public class DatabaseContext :DbContext
+    public class DatabaseContext : DbContext
     {
         public DbSet<EvernoteUser> EvernoteUsers { get; set; }
         public DbSet<Note> Notes { get; set; }

@@ -1,11 +1,10 @@
-﻿using MyEverNote.DataAccessLayer;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyeverNote.BusinessLayer
+namespace MyEverNote.DataAccessLayer.EntityFramework
 {
     public class RepositoryBase
     {

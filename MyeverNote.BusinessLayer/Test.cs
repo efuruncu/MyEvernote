@@ -1,4 +1,5 @@
-﻿using MyEverNote.Entities;
+﻿using MyEverNote.DataAccessLayer.EntityFramework;
+using MyEverNote.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,26 +1,26 @@
-﻿using System;
+﻿using MyEverNote.DataAccessLayer.Abstract;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using MyEverNote.DataAccessLayer;
 
-namespace MyeverNote.BusinessLayer
+namespace MyEverNote.DataAccessLayer.EntityFramework
 {
-   public class Repository<T>:RepositoryBase where T :class
+    public class Repository<T> : RepositoryBase,IRepository<T> where T : class
     {
         private DbSet<T> _objectSet;
         public Repository()
-        { 
+        {
             _objectSet = context.Set<T>();
         }
         public List<T> List()
         {
             return _objectSet.ToList();
         }
-        public List<T> List(Expression<Func<T,bool>> where)
+        public List<T> List(Expression<Func<T, bool>> where)
         {
             return _objectSet.Where(where).ToList();
         }
@@ -39,11 +39,11 @@ namespace MyeverNote.BusinessLayer
             _objectSet.Remove(obj);
             return Save();
         }
-        private int Save()
+        public int Save()
         {
             return context.SaveChanges();
         }
-        public T Find(Expression<Func<T,bool>> where)
+        public T Find(Expression<Func<T, bool>> where)
         {
             return _objectSet.FirstOrDefault(where);
         }
