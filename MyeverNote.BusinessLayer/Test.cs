@@ -11,13 +11,14 @@ namespace MyeverNote.BusinessLayer
     {
         Repository<Category> repo_category = new Repository<Category>();
         Repository<EvernoteUser> repo_user = new Repository<EvernoteUser>();
+        Repository<Comment> repo_comment = new Repository<Comment>();
+        Repository<Note> repo_note = new Repository<Note>();
         public Test()
         {
             // //Eğer database veritabanında mevcut değilse oluştur.
             // MyEverNote.DataAccessLayer.DatabaseContext db = new MyEverNote.DataAccessLayer.DatabaseContext();
             ////Database ile birlikte verilerinde oluşması için select sorgusununda çalışması gerekiyor.
             // db.Categories.ToList();
-
 
             List<Category> categories = repo_category.List();
         }
@@ -48,7 +49,7 @@ namespace MyeverNote.BusinessLayer
             if (user != null)
             {
                 user.Username = "ali";
-                int result = repo_user.Save();
+                int result = repo_user.Update(user);
             }
 
         }
@@ -61,6 +62,21 @@ namespace MyeverNote.BusinessLayer
                 int result = repo_user.Delete(user);
             }
 
+        }
+        public void CommentTest()
+        {
+            EvernoteUser user = repo_user.Find(x => x.Id == 1);
+            Note note = repo_note.Find(x => x.Id == 3);
+            Comment comment = new Comment()
+            {
+                Text = "Bu bir testtir.",
+                CreatedOn = DateTime.Now,
+                ModifiedOn = DateTime.Now,
+                ModifiedUsername = "eliffuruncu",
+                Note = note,
+                Owner = user
+            };
+            repo_comment.Insert(comment);
         }
     }
 }

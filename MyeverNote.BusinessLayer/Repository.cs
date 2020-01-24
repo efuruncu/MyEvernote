@@ -9,13 +9,12 @@ using MyEverNote.DataAccessLayer;
 
 namespace MyeverNote.BusinessLayer
 {
-   public class Repository<T> where T :class
+   public class Repository<T>:RepositoryBase where T :class
     {
-        private DatabaseContext db = new DatabaseContext();
         private DbSet<T> _objectSet;
         public Repository()
-        {
-            _objectSet = db.Set<T>();
+        { 
+            _objectSet = context.Set<T>();
         }
         public List<T> List()
         {
@@ -40,9 +39,9 @@ namespace MyeverNote.BusinessLayer
             _objectSet.Remove(obj);
             return Save();
         }
-        public int Save()
+        private int Save()
         {
-            return db.SaveChanges();
+            return context.SaveChanges();
         }
         public T Find(Expression<Func<T,bool>> where)
         {
